@@ -1,73 +1,225 @@
- Privacy Policy for Picsora
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Picsora — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Picsora — mobile media player and editor." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#98a1b3;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;padding:32px;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#071024 0%,#091426 50%,#071025 100%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .container{width:100%;max-width:var(--maxw);} 
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    header{display:flex;align-items:flex-start;gap:18px}
+    .logo{
+      width:72px;height:72px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#60a5fa);box-shadow:0 6px 20px rgba(59,130,246,0.12);
+      flex-shrink:0
+    }
+    .logo svg{width:44px;height:44px}
+    h1{margin:0;font-size:20px;letter-spacing:-0.2px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:13px}
 
-Last Updated:September 28, 2025
+    .meta{display:flex;gap:12px;margin-top:18px;align-items:center;flex-wrap:wrap}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted);font-size:13px;border:1px solid rgba(255,255,255,0.02)}
 
-1. Introduction
+    main{display:grid;grid-template-columns:260px 1fr;gap:20px;margin-top:20px}
+    nav.toc{position:sticky;top:26px;align-self:start}
+    .toc h3{margin:0 0 10px 0;font-size:13px;color:var(--muted)}
+    .toc ul{list-style:none;padding:0;margin:0;background:rgba(255,255,255,0.01);border-radius:10px;padding:12px}
+    .toc li{margin:8px 0}
+    .toc a{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
 
-Welcome to Picsora (“App”, “we”, “our”, or “us”).
-Your privacy is very important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.
+    article{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02)}
+    h2{font-size:16px;margin-top:0}
+    h3.section-title{font-size:14px;margin-bottom:8px}
+    .muted{color:var(--muted);font-size:13px}
 
-By installing and using Picsora, you agree to this Privacy Policy.
+    section{margin-bottom:18px;padding-bottom:8px;border-bottom:1px dashed rgba(255,255,255,0.02)}
+    .content p{line-height:1.6;color:#dce9f6;margin:10px 0}
+    .permission-list, .points{margin:8px 0;padding-left:18px}
+    .cta{display:flex;gap:8px;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;cursor:pointer}
+    .btn.ghost{background:transparent}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04202b;border:0}
 
-2. Information We Collect
+    footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px;color:var(--muted);font-size:13px}
 
-Picsora is designed to play videos, music, show photos, and provide editing features.
+    @media (max-width:880px){
+      main{grid-template-columns:1fr;}
+      nav.toc{order:2}
+      header{flex-direction:row}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="main">
+      <header>
+        <div class="logo" aria-hidden="true">
+          <!-- simple camera / play icon -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="3" width="20" height="14" rx="3" fill="white" opacity="0.12"/>
+            <path d="M9 8v6l5-3-5-3z" fill="#04202b"/>
+            <circle cx="18" cy="18" r="4" fill="#6ee7b7" opacity="0.12"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Picsora — Privacy Policy</h1>
+          <p class="lead">Effective for the Picsora mobile app. Clear, short, and easy to read.</p>
+          <div class="meta">
+            <span class="badge">Last Updated: September 28, 2025</span>
+            <span class="badge">App: Picsora</span>
+            <span class="badge">Contact: <a href="mailto:androdev890@gmail.com" style="color:var(--accent);text-decoration:none">androdev890@gmail.com</a></span>
+          </div>
+        </div>
+      </header>
 
-We do not collect or store any personal data on our servers.
-However, the following information may be accessed locally on your device:
+      <main>
+        <nav class="toc" aria-label="Table of contents">
+          <div class="toc">
+            <h3>On this page</h3>
+            <ul>
+              <li><a href="#introduction">1. Introduction</a></li>
+              <li><a href="#info">2. Information We Collect</a></li>
+              <li><a href="#use">3. How We Use Information</a></li>
+              <li><a href="#permissions">4. Permissions Used</a></li>
+              <li><a href="#thirdparty">5. Third-Party Services</a></li>
+              <li><a href="#children">6. Children’s Privacy</a></li>
+              <li><a href="#security">7. Data Security</a></li>
+              <li><a href="#changes">8. Changes to This Policy</a></li>
+              <li><a href="#contact">9. Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
 
-Media files (photos, videos, audio) stored on your device.
+        <article>
+          <section id="introduction">
+            <h2>1. Introduction</h2>
+            <div class="content">
+              <p>Welcome to <strong>Picsora</strong> (the “App”, “we”, “our”, or “us”). Your privacy is very important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+              <p>By installing and using Picsora, you agree to this Privacy Policy.</p>
+            </div>
+          </section>
 
-App usage data (basic crash reports and performance data via Google Play Services).
+          <section id="info">
+            <h2>2. Information We Collect</h2>
+            <div class="content">
+              <p>Picsora is designed to play videos, music, show photos, and provide editing features.</p>
+              <p>We do <strong>not</strong> collect or store any personal data on our servers. However, the following information may be accessed locally on your device:</p>
+              <ul class="points">
+                <li><strong>Media files</strong> (photos, videos, audio) stored on your device.</li>
+                <li><strong>App usage data</strong> (basic crash reports and performance data via Google Play Services).</li>
+              </ul>
+            </div>
+          </section>
 
-3. How We Use Information
+          <section id="use">
+            <h2>3. How We Use Information</h2>
+            <div class="content">
+              <p>The information accessed by Picsora is used only to:</p>
+              <ul class="points">
+                <li>Play your videos, music, and display photos.</li>
+                <li>Allow you to edit your media files.</li>
+                <li>Improve app stability and fix bugs (through anonymous crash logs).</li>
+              </ul>
+              <p>We do not sell, share, or transfer your data to third parties.</p>
+            </div>
+          </section>
 
-The information accessed by Picsora is used only to:
+          <section id="permissions">
+            <h2>4. Permissions Used</h2>
+            <div class="content">
+              <p>Picsora may request the following permissions:</p>
+              <ul class="permission-list">
+                <li><strong>Storage / Media Access</strong>: To access and play your videos, music, and photos.</li>
+                <li><strong>Network Access (Optional)</strong>: For checking updates, ads, or analytics (if applicable).</li>
+              </ul>
+            </div>
+          </section>
 
-Play your videos, music, and display photos.
+          <section id="thirdparty">
+            <h2>5. Third-Party Services</h2>
+            <div class="content">
+              <p>Picsora may use third-party services such as:</p>
+              <ul class="points">
+                <li><strong>Google Play Services</strong> (for app functionality and updates).</li>
+                <li><strong>Ad Networks</strong> (if monetized, e.g., AdMob) to display ads.</li>
+              </ul>
+              <p>These third parties may collect anonymized information according to their own policies.</p>
+            </div>
+          </section>
 
-Allow you to edit your media files.
+          <section id="children">
+            <h2>6. Children’s Privacy</h2>
+            <div class="content">
+              <p>Picsora is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+            </div>
+          </section>
 
-Improve app stability and fix bugs (through anonymous crash logs).
+          <section id="security">
+            <h2>7. Data Security</h2>
+            <div class="content">
+              <p>Your media files remain on your device. We do not upload or store your files on external servers.</p>
+              <p>Standard security practices are applied to protect app usage data.</p>
+            </div>
+          </section>
 
-We do not sell, share, or transfer your data to third parties.
+          <section id="changes">
+            <h2>8. Changes to This Policy</h2>
+            <div class="content">
+              <p>We may update this Privacy Policy from time to time. Any updates will be reflected with a new “Last Updated” date.</p>
+            </div>
+          </section>
 
-4. Permissions Used
+          <section id="contact">
+            <h2>9. Contact Us</h2>
+            <div class="content">
+              <p>If you have any questions or concerns about this Privacy Policy, you can contact us at:</p>
+              <p><strong>Email:</strong> <a href="mailto:androdev890@gmail.com" style="color:var(--accent);text-decoration:none">androdev890@gmail.com</a></p>
+            </div>
+          </section>
 
-Picsora may request the following permissions:
+          <div class="cta">
+            <button class="btn" onclick="window.print()">Print</button>
+            <button class="btn" onclick="copyEmail()">Copy Email</button>
+            <a class="btn primary" href="#contact">Contact Support</a>
+          </div>
 
-Storage/Media Access: To access and play your videos, music, and photos.
+          <footer>
+            <div>© Picsora • Last Updated: September 28, 2025</div>
+            <div class="muted">Made with care for your privacy</div>
+          </footer>
 
-Network Access (Optional): For checking updates, ads, or analytics (if applicable).
+        </article>
+      </main>
+    </div>
+  </div>
 
-5. Third-Party Services
-
-Picsora may use third-party services such as:
-
-Google Play Services (for app functionality and updates).
-
-Ad Networks (if monetized, e.g., AdMob) to display ads.
-
-These third parties may collect anonymized information according to their own policies.
-
-6. Children’s Privacy
-
-Picsora is not directed at children under 13. We do not knowingly collect personal information from children.
-
-7. Data Security
-
-Your media files remain on your device.
-
-We do not upload or store your files on external servers.
-
-Standard security practices are applied to protect app usage data.
-
-8. Changes to This Policy
-
-We may update this Privacy Policy from time to time. Any updates will be reflected with a new “Last Updated” date.
-
-9. Contact Us
-
-If you have any questions or concerns about this Privacy Policy, you can contact us at:
-
- email: androdev890@gmail.com
+  <script>
+    function copyEmail(){
+      const email = 'androdev890@gmail.com';
+      navigator.clipboard?.writeText(email).then(()=>{
+        alert('Email copied to clipboard');
+      }).catch(()=>{
+        prompt('Copy this email:', email);
+      });
+    }
+  </script>
+</body>
+</html>
